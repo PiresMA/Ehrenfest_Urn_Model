@@ -2,4 +2,4 @@
 Monte carlo simulation of the Ehrenfest Model.  
 For more details see: 
 [1] https://en.wikipedia.org/wiki/Ehrenfest_model
-
+[2] Ehrenfest Urn Problem with Applications: http://www.arcaneknowledge.org/science/ehrenfest.html
