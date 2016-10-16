@@ -1,5 +1,7 @@
 # Ehrenfest_Urn_Model
-Monte carlo simulation of the Ehrenfest Model.  
-For more details see: 
-[1] https://en.wikipedia.org/wiki/Ehrenfest_model
-[2] Ehrenfest Urn Problem with Applications: http://www.arcaneknowledge.org/science/ehrenfest.html
+Basic Ehrenfest model: consider two urns A and B and a certain number N of balls numbered from 1 to N. Initially, the balls are placed on urn A. Next, one of the balls is chosen at random and transferred to the other urn. This procedure is then repeated at each time step.
+
+[1] P. Ehrenfest and T. Ehrenfest, Phys. Z. 8, 311 (1907)
+[2] Chapter 6 of Tomé, T., & De Oliveira, M. J. (2015). Stochastic dynamics and irreversibility. Cham: Springer.
+ISO 690	 
+[3] Ehrenfest Urn Problem with Applications: http://www.arcaneknowledge.org/science/ehrenfest.html
