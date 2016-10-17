@@ -1,5 +1,5 @@
 # Ehrenfest_Urn_Model
-Basic Ehrenfest model: consider two urns A and B and a certain number N of balls numbered from 1 to N. Initially, the balls are placed on urn A. Next, one of the balls is chosen at random and transferred to the other urn. This procedure is then repeated at each time step.
+Basic Ehrenfest model: consider two urns A and B and a certain number N of balls numbered from 1 to N. Initially, the balls are placed on urn A. Next, one of the balls is chosen at random and transferred to the other urn. This procedure is then repeated at each time step. In the long time the Ehrenfest model approaches equilibrium. This model can be interpreted as a toy model of exchange of heat between two bodies.
 
 [1] P. Ehrenfest and T. Ehrenfest, Phys. Z. 8, 311 (1907)
 
