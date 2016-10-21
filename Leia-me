@@ -1,4 +1,4 @@
-O modelo de Ehrenfest ilustra de modo interessante a rota para o equilibrio termodinâmico. 
+O modelo de Ehrenfest ilustra de modo interessante a rota para o equilibrio termodinâmico e o papel das flutuações. 
 A formulação desse modelo é bem simples: considere N bolas enumeradas distribuidas entre dois compartimentos, 
 digamos E e D. A cada passo de tempo selecionamos uma bola ao acaso e a trocamos de caixa. Repete-se esse 
 procedimento até o sistema atingir o equilibrio.
