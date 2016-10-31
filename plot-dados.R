@@ -1,12 +1,14 @@
 
+# importar dados
 x.ne = read.table("ne.txt")
 x.nd = read.table("nd.txt")
 x.eq = read.table("eq.txt")
 
+# escala temporal
 time = 1:(dim(x.eq)[1])
 
 
-
+# exportar como figura png: inicio
 png("output_ehrenfest.png", width = 600, height = 500)
 
 plot(time,x.ne[,1],  type="l",col="blue" , cex = 0.8,
@@ -23,4 +25,4 @@ legend("topright", bty="n",
        legend =c("urna esquerda","urna direita","equilibrio") ) 
        
 dev.off()
-
+# exportar como figura png: fim
