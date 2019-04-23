@@ -1,9 +1,10 @@
 # ==========================================================#
-# Introducao a Simulacao Computacional com Python     #
+#  Simulacao Computacional do modelo de Ehrenfest:          #
+#  rota irreversivel para o equilibrio                      #
 # ==========================================================#
 
-# Simulacao Computacional do modelo de Ehrenfest:
-# rota irreversivel para o equilibrio
+#
+
 """
 # Regras
 ** Temos duas caixas com um total de N bolas numeradas de 1 a N.
