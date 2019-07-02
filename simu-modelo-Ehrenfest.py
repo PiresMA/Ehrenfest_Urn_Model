@@ -3,7 +3,7 @@
 #  rota irreversivel para o equilibrio                      #
 # ==========================================================#
 
-#
+# ESSE CÓDIGO ESTÁ EM UM MODO NÃO PYTHONICO (LENTO), MAS CUMPRE BEM SEU OBJETIVO.
 
 """
 # Regras
