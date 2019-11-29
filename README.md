@@ -4,7 +4,7 @@
 Consider two urns A and B and a certain number N of balls numbered from 1 to N. Initially, the balls are placed on urn A. Next, one of the balls is chosen at random and transferred to the other urn. This procedure is then repeated at each time step. In the long time the Ehrenfest model approaches equilibrium. 
 
 ## Applications
-This model can be interpreted as a toy model of: (i) heat exchange between two bodies (ii) diffusion of gases between two chambers. Some interesting generalizations can be found in [4-9]. 
+This model has been employed as a platform for testing key concepts of statistical physics and related fields. Apart from this, it can be interpreted as a toy model of: (i) heat exchange between two bodies (ii) diffusion of gases between two chambers. Some interesting generalizations can be found in [4-9]. 
 
 ###### References
 * [1] P. Ehrenfest and T. Ehrenfest, Phys. Z. 8, 311 (1907)
@@ -17,3 +17,5 @@ ISO 690
 * [7]Kao, Yee-Mou, and Pi-Gang Luan. "Poincaré cycle of a multibox Ehrenfest urn model with directed transport." Physical Review E 67.3 (2003): 031101.
 * [8] Nagler, Jan. "Directed and undirected multiurn models in a one-dimensional ring." Physical Review E 72.5 (2005): 056129.
 * [9] Luan, Pi-Gang, and Yee-Mou Kao. "Drifting diffusion on a circle as continuous limit of a multiurn Ehrenfest model." Physical Review E 69.2 (2004): 022102.
+* Tseng, Chun-Hsiung, Yee-Mou Kao, and Chi-Ho Cheng. "Ehrenfest urn model with interaction." Physical Review E 96.3 (2017): 032125.
+* Meerson, Baruch, and Pini Zilber. "Large deviations of a long-time average in the Ehrenfest urn model." Journal of Statistical Mechanics: Theory and Experiment 2018.5 (2018): 053202.
