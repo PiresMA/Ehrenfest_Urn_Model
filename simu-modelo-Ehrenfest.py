@@ -3,7 +3,7 @@
 #  rota irreversivel para o equilibrio                      #
 # ==========================================================#
 
-# ESSE CÓDIGO ESTÁ EM UM MODO NÃO PYTHONICO (LENTO), MAS CUMPRE BEM SEU OBJETIVO.
+
 
 """
 # Regras
@@ -24,57 +24,54 @@ output: 3 arquivos txt
 """
 
 # importar biblioteca geradora de numeros aleatorios
-import random
-import numpy
+import numpy as np
+import random as rd
+import matplotlib.pyplot as plt
+
 
 # funcao que devolve a quantidade de vezes
 # que o numero x aparece no vetor vec
 def ocorrencias(vec, x):
-    n = len(vec)
-    cont = 0
-    for k in range(n):
-        if vec[k] == x:
-            cont += 1 # cont=cont+1
-    return cont
+    return float(sum(vec==x))
 
-
-# inicializacao: ne bolas na direita de um total de N
-def inicializacao(N, ne):
-    posicoes = range(N)
-    for k in range(0,ne):
-        posicoes[k] = 0
-    for k in range(ne,N):
-        posicoes[k] = 1
-    urna_inicial=posicoes
+# inicializacao: ne bolas na esquerda de um total de N
+def inicializacao(N, ne):        
+    bolas0 = np.zeros( ne, dtype=int)
+    bolas1 = np.ones(  N-ne, dtype=int)
+    urna_inicial = np.concatenate( (bolas0,bolas1), axis=None)
+    #np.random.shuffle(full)    
     return urna_inicial
-
 
 # funcao para transferencia de 1 bola
 def transferenciaDeUmabola(vetor_urna):
-    numeroBolas = len(vetor_urna)
-    sorteada = random.randint(0,numeroBolas-1)
-    if vetor_urna[sorteada]==1:
-        vetor_urna[sorteada]=0
-    else:
-        vetor_urna[sorteada]=1
+    numeroBolas = len(vetor_urna)    
+    sorteada    = rd.randint(0,numeroBolas-1)
+    
+    if vetor_urna[sorteada]==1: vetor_urna[sorteada]=0        
+    else: vetor_urna[sorteada]=1
+                
     return vetor_urna
 
 
 
-# parametros
-N = 1000; ne = N; tf = 5000
 
-# vetores para guardar resultados
-vec_ne = []
-vec_nd = []
-vec_eq = []
+# parametros
+N  = 100; 
+ne = N; 
+tf = 5*N
+
 
 # inicializacao
 bolaNaUrna = inicializacao(N,ne)
+
 print("t:",0 ,"ne:", ocorrencias(bolaNaUrna, 0), "nd:", ocorrencias(bolaNaUrna, 1) )
-vec_ne.append( ocorrencias(bolaNaUrna, 0) )
-vec_nd.append( ocorrencias(bolaNaUrna, 1) )
-vec_eq.append(N/2)
+
+# vetores para guardar resultados
+vec_ne = [ ocorrencias(bolaNaUrna, 0) ]
+vec_nd = [ ocorrencias(bolaNaUrna, 1) ]
+vec_eq = [ N/2 ]
+
+print(vec_eq)
 
 # transferencia de bolas durante tf+1 instantes
 for t in range(1,tf):
@@ -82,10 +79,19 @@ for t in range(1,tf):
     vec_ne.append( ocorrencias(bolaNaUrna, 0) )
     vec_nd.append( ocorrencias(bolaNaUrna, 1) )
     vec_eq.append(N/2)
+    
+    
+    
+plt.plot(vec_ne,'s',label='$n_{esquerda}$')
+plt.plot(vec_nd,'o',label='$n_{direita}$')
+plt.ylabel('$n_{bolas}$',fontsize=16)
+plt.xlabel('tempo (u.a.t.)',fontsize=16)
+plt.title('Urnas de Ehrenfest: Rota Irreversivel para o Equilibrio')
+plt.axhline(y=float(N)/2, color='k', linestyle='--',label='$n_{equilibrio}$')
+plt.legend()    
 
 
 # salvar
-numpy.savetxt( "ne.txt" , vec_ne)
-numpy.savetxt( "nd.txt" , vec_nd)
-numpy.savetxt( "eq.txt" , vec_eq)
-
+np.savetxt( "ne.txt" , vec_ne)
+np.savetxt( "nd.txt" , vec_nd)
+np.savetxt( "eq.txt" , vec_eq)
