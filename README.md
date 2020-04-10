@@ -9,7 +9,7 @@ This model has been employed as a platform for testing key concepts of statistic
 ###### References
 * [1] P. Ehrenfest and T. Ehrenfest, Phys. Z. 8, 311 (1907)
 * [2] Chapter 6 of Tomé, T., & De Oliveira, M. J. (2015). Stochastic dynamics and irreversibility. Cham: Springer.
-ISO 690	 
+ISO 690. See also https://www.sbm.org.br/docs/coloquios/SE-1.05.pdf
 * [3] Ehrenfest Urn Problem with Applications: http://www.arcaneknowledge.org/science/ehrenfest.html
 * [4] Garibaldi, U., M. A. Penco, and P. Viarengo. "An exact physical approach to market participation models." Heterogenous Agents, Interactions and Economic Performance. Springer Berlin Heidelberg, 2003. 91-103.
 * [5] Clark, Jaime, et al. "Generalization of the Ehrenfest urn model to a complex network." Physical Review E 92.1 (2015): 012103.
