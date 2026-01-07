@@ -19,3 +19,9 @@ ISO 690. See also https://www.sbm.org.br/docs/coloquios/SE-1.05.pdf
 * [9] Luan, Pi-Gang, and Yee-Mou Kao. "Drifting diffusion on a circle as continuous limit of a multiurn Ehrenfest model." Physical Review E 69.2 (2004): 022102.
 * Tseng, Chun-Hsiung, Yee-Mou Kao, and Chi-Ho Cheng. "Ehrenfest urn model with interaction." Physical Review E 96.3 (2017): 032125.
 * Meerson, Baruch, and Pini Zilber. "Large deviations of a long-time average in the Ehrenfest urn model." Journal of Statistical Mechanics: Theory and Experiment 2018.5 (2018): 053202.
+
+
+
+Disclaimer: The code presented here is for educational purposes and therefore has not been developed in a sophisticated manner considering all possible nuances. 
+
+
